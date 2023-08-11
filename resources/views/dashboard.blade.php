@@ -48,7 +48,7 @@
         <!-- END ------------>
 
         <!-- CONTROL ------------------>
-        <div class="container d-flex justify-content-end pt-5">
+        <div class="container d-flex justify-content-end pt-5 pb-3">
             <a href="{{ route('Content.create') }}" class="btn btn-success">
                 <span><i class="fa-solid fa-plus fa-sm me-2"></i></span>
                 New Post
@@ -65,7 +65,7 @@
                     <h5 class="card-title">{{ $contents->name }}</h5>
                     <p class="card-text">{{ $contents->description }}</p>
                     <hr>
-                    <p class="card-text text-end"><small class="text-muted">Last Updated : {{ $contents->updated_at }}</small></p>
+                    <p class="card-text text-end"><small class="text-muted">Create At : {{ $contents->created_at }}</small></p>
                 </div>
             </div>
         </div>

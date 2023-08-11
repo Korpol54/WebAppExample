@@ -17,6 +17,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                            <a href="" class="nav-link text-dark me-2">Home</a>
+                        </li>
                         <li class="nav-item">
                             <a href="{{ route('login') }}" class="nav-link text-dark me-2">Sign In</a>
                         </li>
@@ -30,8 +33,9 @@
         <!-- End ------------------------>
 
         <!-- Section ------------------------------>
-        <h3 class="text-center pt-5 pb-2">Content</h3>
-        @foreach ($content as $contents)
+        <h3 class="text-center pt-5 pb-2">Hello, How are you??</h3>
+            <h5 class="text-center pb-2">Create your post now. <a href="{{ route('login') }}"><small>Post Now!</small></a></h5>
+            @foreach ($content as $contents)
         <div class="container d-flex justify-content-center pt-3">
             <div class="card mb-3 bg-dark text-white card-content" style="width: 80%;">
                 <img class="card-img-top" src="{{ asset('storeImg/'.$contents->image) }}" alt="">
